@@ -32,6 +32,11 @@ console.log(irregularPlurals);
 ```
 
 
+## Related
+
+- [plur](https://github.com/sindresorhus/plur) - Pluralize a word
+
+
 ## License
 
 MIT © [Sindre Sorhus](http://sindresorhus.com)
