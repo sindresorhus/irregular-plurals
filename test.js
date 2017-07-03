@@ -1,7 +1,7 @@
 import test from 'ava';
-import m from './irregular-plurals.json';
+import m from './irregular-plurals';
 
 test(t => {
-	t.true(typeof m === 'object');
+	t.is(typeof m, 'object');
 	t.true('calf' in m);
 });
