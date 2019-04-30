@@ -1,6 +1,6 @@
 {
 	"name": "irregular-plurals",
-	"version": "2.0.0",
+	"version": "3.0.0",
 	"description": "Map of nouns to their irregular plural form",
 	"license": "MIT",
 	"repository": "sindresorhus/irregular-plurals",
