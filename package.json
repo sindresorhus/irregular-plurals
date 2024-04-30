@@ -4,17 +4,24 @@
 	"description": "Map of nouns to their irregular plural form",
 	"license": "MIT",
 	"repository": "sindresorhus/irregular-plurals",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
+	"exports": {
+		"types": "./index.d.ts",
+		"default": "./index.js"
+	},
+	"sideEffects": false,
 	"engines": {
-		"node": ">=8"
+		"node": ">=18.20"
 	},
 	"scripts": {
-		"//test": "xo && ava && tsd",
-		"test": "ava"
+		"//test": "xo && ava && tsc --noEmit index.d.ts",
+		"test": "ava && tsc --noEmit index.d.ts"
 	},
 	"files": [
 		"index.js",
@@ -35,18 +42,8 @@
 		"nouns"
 	],
 	"devDependencies": {
-		"ava": "^1.4.1",
-		"tsd": "^0.7.2",
-		"xo": "^0.24.0"
-	},
-	"xo": {
-		"rules": {
-			"import/extensions": "off"
-		}
-	},
-	"tsd": {
-		"compilerOptions": {
-			"resolveJsonModule": true
-		}
+		"ava": "^6.1.2",
+		"tsd": "^0.31.0",
+		"xo": "^0.58.0"
 	}
 }

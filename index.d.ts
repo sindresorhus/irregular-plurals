@@ -1,8 +1,21 @@
-import irregularPluralsJson = require('./irregular-plurals.json');
+/**
+A map of nouns to their irregular plural form.
 
-declare const irregularPlurals: ReadonlyMap<
-	keyof typeof irregularPluralsJson,
-	string
->;
+@example
+```
+import irregularPlurals from 'irregular-plurals';
 
-export = irregularPlurals;
+console.log(irregularPlurals.get('cactus'));
+//=> 'cacti'
+
+console.log(irregularPlurals);
+// Map {
+// 	[addendum, 'addenda'],
+// 	[alga, 'algae'],
+// 	…
+// }
+```
+*/
+declare const irregularPlurals: ReadonlyMap<string, string>;
+
+export default irregularPlurals;

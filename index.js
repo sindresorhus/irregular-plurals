@@ -1,4 +1,5 @@
-'use strict';
-const irregularPlurals = require('./irregular-plurals.json');
+import irregularPlurals_ from './irregular-plurals.json' with {type: 'json'};
 
-module.exports = new Map(Object.entries(irregularPlurals));
+const irregularPlurals = new Map(Object.entries(irregularPlurals_));
+
+export default irregularPlurals;
